@@ -1,100 +1,97 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Poppins' ;
-    
-    display: flex;
-
-
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
 }
-/*Começo do código referente a o cabeçalho*/
-.cabeçalho{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 80px;
+
+
+/*Código referene ao cabeçalho*/
+
+header {
+    display: block;
+
     top: 0;
-    position: fixed;
-    text-align: center;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    
-    
+    max-height: 100px;
+    height: 100%;
+    background-color: black;
+    width: 100%;
 }
 
-
-    
-
-.norma_1 {
-    background-color: rgb(255, 255, 255);
-
-    color: rgb(0, 0, 0);
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius:20px;
-    transition: 0.5s;
-    cursor: pointer;
-    font-size: 30px;
-    border: none;
+.cabeça {
+    display: flex;
     justify-content: center;
-    margin-left: 20px;
-margin-right: 20px;
-    
 
 }
 
-.norma_1:hover{
-    
+.forms {
+    padding: 10px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
-    transform: scale(1.2);
-    color: aliceblue;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.3s;
+    border: none;
     width: 200px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius:20px;
-    transition: 0.5s;
-    cursor: pointer;
-   
-}
-form {
-    display: inline-block; /* Torna os formulários elementos em linha */
-    margin-right: 10px; /* Adicione margem direita para separá-los */
 }
 
+.forms:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
 
-
-/*Fim do código referente ao cabeçalho principal.*/
-
-/*=======================================================================*/
-
-/*Começo do código referente ao corpo*/
-.corpo_principal{
-    background-color: gray;
-    max-width: 80%;
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-    margin-top: 100px;
-    border-radius:20px ;
-    border: solid black 1px;
-
+    scale: 1.2;
 }
-
-.imagens_p1{
-    max-width: 150px;
-    border: solid black 0.5px;
-}
-
-/*PC responsivo*/
-@media (min-width: 1025px) {
-    
-}
-
-
 
 @media (max-width:1024px) {
+    .forms {
+        font-size: 170%;
+        width: 120%;
+       
+
+    }
+
+    .forms:hover {
+
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        transition: 0.3s;
+
+        scale: 1;
+
+   }
+
+}
+
+/*Fim do código do cabeçalho*/
+
+/*==========================*/
+
+/*Começo do código referente ao corpo*/
+
+.texto_corpo{
+    
+    width: 80%;
+    margin:0 auto;
+    
+}
+
+.section{
+    width: 30%;
+    background-color: #ccc;
+    margin: 2%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.section:hover{
+    scale: 1.1;
+    
+}
+.seection{
+    display: flex;
 }
