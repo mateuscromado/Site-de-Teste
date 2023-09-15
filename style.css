@@ -49,9 +49,14 @@ header {
     .forms {
         font-size: 170%;
         width: 120%;
-       
+      
+.section{
+width: 80%
+} 
 
     }
+
+
 
     .forms:hover {
 
