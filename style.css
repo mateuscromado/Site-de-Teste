@@ -123,7 +123,51 @@ header {
 
     
 }
+/*primeira caixa com meus projetos*/
+.portifolios{
+    display: flex;
+}
+.port1{
 
+    margin: 20px;
+    height: 400px;
+    width: 30%;
+    background-color: #ccc;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    
+    transition: 0.3s;
+}
+
+.port1:hover{
+    scale: 1.2;
+
+    box-shadow: 0px 5px 10px black;
+
+}
+.port1 img{
+    width: 100%;
+}
+
+.port1_text{
+margin-left:10px;
+}
+
+@media (max-width:1023px) {
+    .port1{
+        width: 95%;
+        height: 50%;
+
+        margin: 0 auto;
+
+        margin-top: 150px;
+    }
+}
+
+/*Fim da primeira caixa com meus projetos*/
 .section:hover {
     scale: 1.1;
 
@@ -200,7 +244,7 @@ cursor: pointer;
 
 .botao2 {
     color: #ffffff;
-    background-color: black;
+    background-color: rgb(42, 42, 42);
     border-radius: 10px;
 
     width: auto;
