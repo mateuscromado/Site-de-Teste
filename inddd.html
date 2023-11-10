@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>meu menu</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Importação da fonte Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--===========================-->
+
+    <style>
+        .menu-ocultar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho-principal">
+            <div class="icone-cabecalho">
+                <button type="button" id="sanduiche">
+                    <img src="imagens/menu_sanduiche.svg" alt="">
+                </button>
+                <div class="menu" id="menu-js">
+                    <a href="#">
+                        <img src="icone1.png" alt="">
+                        <h2>link1</h2>
+                    </a>
+                    <a href="#">
+                        <img src="icone2.png" alt="">
+                        <h2>link2</h2>
+                    </a>
+                    <a href="#">
+                        <img src="icone3.png" alt="">
+                        <h2>link3</h2>
+                    </a>
+                    <a href="#">
+                        <img src="icone4.png" alt="">
+                        <h2>link4</h2>
+                    </a>
+                </div>
+            </div>
+            <div class='cabeça'>
+                <form action="#top">
+                    <button class="forms">INÍCIO</button>
+                </form>
+                <form action="#mei">
+                    <button class="forms">SOBRE MIM</button>
+                </form>
+                <form action="#fim">
+                    <button class="forms">MEUS PROJETOS</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="imagem">
+        <div class="simagem">
+            <h1 id="top">Olá mundo!</h1>
+        </div>
+    </div>
+    <!-- O restante do seu código aqui... -->
+    <footer>
+        <div class="footer">
+            <h1>olá meu rodapé </h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic fuga animi inventore enim provident soluta assumenda nobis incidunt unde?</h3>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("sanduiche").addEventListener("click", function () {
+            var elemento = document.getElementById("menu-js");
+            elemento.classList.toggle("menu-ocultar");
+        });
+    </script>
+</body>
+</html>

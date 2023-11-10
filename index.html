@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>meu menu</title>
+    <title>Mateus Pereira | Meu Portifólio</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/LOGO Mateus.png" type="image/x-icon">
 
     <!--Importação da fonte Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,23 +19,91 @@
 
 
 <body>
+
     <header>
+        <div class="cabecalho-principal">
+            <div class="icone-cabecalho">
 
-        <div class='cabeça'>
+                <button type="button"><img src="imagens/LOGO Mateus.png" alt=""></button>
 
-            <form action="#top">
-                <button class="forms">INÍCIO</button>
-            </form>
+            </div>
 
-            <form action="#mei">
-                <button class="forms">SOBRE MIM</button>
-            </form>
+            <div class='cabeça'>
 
-            <form action="#fim">
-                <button class="forms">MEUS PROJETOS</button>
-            </form>
+                <form action="#top">
+                    <button class="forms">INÍCIO</button>
+                </form>
+
+                <form action="#mei">
+                    <button class="forms">SOBRE MIM</button>
+                </form>
+
+                <form action="#fim">
+                    <button class="forms">MEUS PROJETOS</button>
+                </form>
+
+            </div>
+
+            <div class="conserto">
+                 <div class="menu-retratil">
+                <div class="sanduiche">
+                    <img src="imagens/menu_sanduiche.svg" id="sanduiche" alt="">
+                </div>
+
+                <br>
+
+                <div class="menu  menu-ocultar   " id="menu-js">
+
+                    <a class="link-menu" href="">
+                        <img src="imagens/LOGO Mateus.png" alt="">
+                        <h2>link1</h2>
+                    </a>
+                    <br>
+
+                    <a class="link-menu" href="">
+                        <img src="imagens/LOGO Mateus.png" alt="">
+                        <h2>link2</h2>
+                    </a>
+<br>
+                    <a class="link-menu" href="">
+                        <img src="imagens/LOGO Mateus.png" alt="">
+                        <h2>link3</h2>
+                    </a>
+<br>
+                    <a class="link-menu" href="">
+                        <img src="imagens/LOGO Mateus.png" alt="">
+                        <h2>link4</h2>
+                    </a>
+                </div>
+            </div>
+            </div>
+           
+
         </div>
+
+
+
     </header>
+
+    <script>
+        var ocultar = document.getElementById("menu-js");
+        var ocultador = document.getElementById("sanduiche");
+        var aberto = false;
+
+        ocultador.addEventListener("click", function () {
+            if (aberto) {
+                ocultar.classList.add("menu-ocultar");
+            } else {
+                ocultar.classList.remove("menu-ocultar");
+            }
+            aberto = !aberto;
+        });
+
+
+
+
+
+    </script>
     <div class="imagem">
         <div class="simagem">
             <h1 id="top">Olá mundo!</h1>
@@ -69,40 +138,40 @@
             blanditiis culpa vel sapiente accusamus aspernatur dolore hic.</p>
 
 
-            <div class="portifolios">
-                <div class="port1">
-                    <img src="imagens/site geo.png" alt="">
-                    <div class="port1_text">
-                        <h3>Geografia em Foco</h3>
-                        <p>Esse é um blog feito para apresentação
-                            de um trabalho escolar
-                        </p>
-                    </div>
-                </div>
-        
-                <div class="port1">
-                    <img src="imagens/site geo.png" alt="">
-                    <div class="port1_text">
-                        <h3>Geografia em Foco</h3>
-                        <p>Esse é um blog feito para apresentação
-                            de um trabalho escolar
-                        </p>
-                    </div>
-                </div>
-
-                <div class="port1">
-                    <img src="imagens/site geo.png" alt="">
-                    <div class="port1_text">
-                        <h3>Geografia em Foco</h3>
-                        <p>Esse é um blog feito para apresentação
-                            de um trabalho escolar
-                        </p>
-                    </div>
+        <div class="portifolios">
+            <div class="port1">
+                <img src="imagens/site geo.png" alt="">
+                <div class="port1_text">
+                    <h3>Geografia em Foco</h3>
+                    <p>Esse é um blog feito para apresentação
+                        de um trabalho escolar
+                    </p>
                 </div>
             </div>
-        
 
-        
+            <div class="port1">
+                <img src="imagens/site geo.png" alt="">
+                <div class="port1_text">
+                    <h3>Geografia em Foco</h3>
+                    <p>Esse é um blog feito para apresentação
+                        de um trabalho escolar
+                    </p>
+                </div>
+            </div>
+
+            <div class="port1">
+                <img src="imagens/site geo.png" alt="">
+                <div class="port1_text">
+                    <h3>Geografia em Foco</h3>
+                    <p>Esse é um blog feito para apresentação
+                        de um trabalho escolar
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
 
 
 
@@ -117,6 +186,8 @@
                 <input type="password" id="pass" name="password" minlength="8" required />
                 <br>
                 <input class="botao" type="submit" value="Sign in" />
+                <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
 
             </div>
 

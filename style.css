@@ -28,37 +28,54 @@ header {
 
 }
 
+.cabecalho-principal {
+    display: flex;
+}
+
+.icone-cabecalho a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+    display: flex;
+
+}
+
+.icone-cabecalho h1 {
+    margin: 0;
+    align-items: center !important;
+    font-size: 80px;
+}
+
 .cabeça {
     display: flex;
-    justify-content: center;
-
+    justify-content: flex-start;
+    width: 50%;
 }
 
 
 
-
-
 .forms {
-    padding: 10px;
+    padding: 5px;
     margin: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
-    border-radius: 30px;
     font-size: 20px;
     transition: 0.3s;
     border: none;
-    width: 200px;
+    width: 190px;
     cursor: pointer;
     animation-name: formm;
     animation-duration: 2s;
 }
 
 .forms:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
     transition: 0.3s;
 
-    scale: 1.2;
+    scale: 1.1;
+
+    border-bottom: black 3px solid;
+
 }
 
 @keyframes formm {
@@ -95,6 +112,84 @@ header {
 }
 
 
+.icone-cabecalho button img{
+   width: 75px;
+   padding: 0;
+    
+}
+
+.icone-cabecalho button{
+    background-color: #ffffff00;
+    border: none;
+    padding: 0;
+}
+
+.menu{
+    background-color:#adadad;
+    transition: 1s;
+    width: 300px;
+    height: 80vh;
+    margin-top: 50px !important;
+
+
+    border-radius: 20px 0px 0px 0px;
+}
+
+.menu a {
+
+    text-decoration: none;
+
+color: black;
+}
+
+
+
+.link-menu{
+    display: flex;
+}
+
+.link-menu img{
+    width: 80px;
+}
+
+.conserto{
+    width: 100%;
+    background-color: #88888800;
+
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-retratil{
+    display: block;
+    background-color: rgba(0, 255, 255, 0);
+
+    
+
+
+}
+
+.menu-ocultar{
+    width: 80px;
+}
+
+.sanduiche{
+    display: flex;
+
+   
+}
+
+.sanduiche img{
+
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-right: 20px;
+
+    cursor: pointer;
+    
+}
+
+
+
 /*Fim do código do cabeçalho*/
 
 /*==========================*/
@@ -121,13 +216,15 @@ header {
     transition: 0.2s;
     cursor: pointer;
 
-    
+
 }
+
 /* caixa com meus projetos*/
-.portifolios{
+.portifolios {
     display: flex;
 }
-.port1{
+
+.port1 {
 
     margin: 20px;
     height: 400px;
@@ -138,26 +235,30 @@ header {
 
     font-size: 20px;
 
-    
+
     transition: 0.3s;
+
+    user-select: none;
+    cursor: pointer;
 }
 
-.port1:hover{
+.port1:hover {
     scale: 1.2;
 
     box-shadow: 0px 5px 10px black;
 
 }
-.port1 img{
+
+.port1 img {
     width: 100%;
 }
 
-.port1_text{
-margin-left:10px;
+.port1_text {
+    margin-left: 10px;
 }
 
 @media (max-width:1023px) {
-    .portifolios{
+    .portifolios {
         display: block;
         width: 80%;
         height: 50%;
@@ -166,7 +267,8 @@ margin-left:10px;
 
         margin-top: 150px;
     }
-    .port1{
+
+    .port1 {
 
         margin: 0 auto;
 
@@ -174,7 +276,11 @@ margin-left:10px;
         width: 100%;
 
         height: auto;
-        
+
+    }
+
+    .port1:hover{
+        scale: 1;
     }
 
 }
@@ -218,16 +324,16 @@ margin-left:10px;
     margin: 100px;
     padding: 20px;
 
-text-align: center;
+    text-align: center;
 
     background-color: #ccc;
 
     border-radius: 10px;
 
     box-shadow: 0px 2px 10px black;
-width: 80%;
+    width: 80%;
 
-justify-content: center;
+    justify-content: center;
 
 }
 
@@ -242,12 +348,12 @@ justify-content: center;
     margin-left: -200px;
 
     font-size: 25px;
-cursor: pointer;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.botao:hover{
-   
+.botao:hover {
+
 
     transition: 0.3s;
     background-color: rgb(61, 61, 61);
@@ -267,14 +373,14 @@ cursor: pointer;
     margin-left: 25%;
 
     font-size: 35px;
-cursor: pointer;
+    cursor: pointer;
     transition: 0.3s;
 
 
 }
 
-.botao2:hover{
-   
+.botao2:hover {
+
 
     transition: 0.3s;
     background-color: rgb(61, 61, 61);
@@ -327,7 +433,13 @@ cursor: pointer;
 }
 
 
-
+.formulario textarea{
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
 /*Fim do código referente ao corpo*/
 
 /*=========================*/
