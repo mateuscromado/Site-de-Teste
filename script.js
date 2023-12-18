@@ -1,14 +1,35 @@
+const carrossel = document.getElementById("carr")
+var largura = document.querySelector("body").offsetWidth
+var i =0
+var contador = 1
+
+function rodar(){
+    i +=1
+    var largura = document.querySelector("body").offsetWidth;
+    largura = largura*i
 
 
-//ocultar e exibir o menu
+    if(largura <= 1024 && largura >= 650){
+        contador = 2    
 
-document.getElementById("sanduiche").addEventListener("click",function(){
-    var ocultar = document.getElementById("menu-js")
+    }
 
-    ocultar.classList.remove("menu-ocultar")
-})
+    
 
-document.getElementById("sanduiche").addEventListener("click", function() {
-    var elemento = document.getElementById("menu-js");
-    elemento.classList.add("menu-ocultar");
-});
+
+
+    if(i>contador){
+        carrossel.style.left = "0px"
+        i = 0
+    }else{
+        carrossel.style.left = `-${largura}px`
+    }
+
+    console.log(largura )
+}
+
+
+console.log(largura)
+
+
+

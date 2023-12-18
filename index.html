@@ -1,211 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <title>Mateus Pereira | Meu Portifólio</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/LOGO Mateus.png" type="image/x-icon">
+    <!--Link do CSS-->
 
-    <!--Importação da fonte Poppins-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu portfolio com uma breve apresentação sobre mim e meus projetos feitos">
+    <title>Mateus Pereira | Portfolio</title>
+    <link rel="shortcut icon" href="imagens/logo.jpeg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins&family=Roboto:wght@100&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-    <!--===========================-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 
-
 <body>
-
+    <!--Começo do cabeçalho-->
     <header>
-        <div class="cabecalho-principal">
-            <div class="icone-cabecalho">
-
-                <button type="button"><img src="imagens/LOGO Mateus.png" alt=""></button>
-
+        <section class="header">
+            <div class="image-h">
+                <img src="imagens/logo.jpeg" alt="Minha logo">
             </div>
+            <nav>
+                <ul class="links">
+                    <li><a href="">Inicio</a>
+                       <div class="linha-link"></div>
+                    </li>
+                    <li><a href="#sb">Sobre mim</a>
+                        <div class="linha-link"></div>
 
-            <div class='cabeça'>
+                       
+                    </li>
+                    <li><a href="#pj">Projetos</a>
+                        <div class="linha-link"></div>
 
-                <form action="#top">
-                    <button class="forms">INÍCIO</button>
-                </form>
+                       
+                    </li>
+                    <li><a href="#ct">Contato</a>
+                        <div class="linha-link"></div>
 
-                <form action="#mei">
-                    <button class="forms">SOBRE MIM</button>
-                </form>
-
-                <form action="#fim">
-                    <button class="forms">MEUS PROJETOS</button>
-                </form>
-
-            </div>
-
-            <div class="conserto">
-                 <div class="menu-retratil">
-                <div class="sanduiche">
-                    <img src="imagens/menu_sanduiche.svg" id="sanduiche" alt="">
-                </div>
-
-                <br>
-
-                <div class="menu  menu-ocultar   " id="menu-js">
-
-                    <a class="link-menu" href="">
-                        <img src="imagens/LOGO Mateus.png" alt="">
-                        <h2>link1</h2>
-                    </a>
-                    <br>
-
-                    <a class="link-menu" href="">
-                        <img src="imagens/LOGO Mateus.png" alt="">
-                        <h2>link2</h2>
-                    </a>
-<br>
-                    <a class="link-menu" href="">
-                        <img src="imagens/LOGO Mateus.png" alt="">
-                        <h2>link3</h2>
-                    </a>
-<br>
-                    <a class="link-menu" href="">
-                        <img src="imagens/LOGO Mateus.png" alt="">
-                        <h2>link4</h2>
-                    </a>
-                </div>
-            </div>
-            </div>
-           
-
-        </div>
-
-
-
+                       
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
+    <!--Fim do cabeçalho-->
+    <section class="banner">
+    </section>
 
-    <script>
-        var ocultar = document.getElementById("menu-js");
-        var ocultador = document.getElementById("sanduiche");
-        var aberto = false;
-
-        ocultador.addEventListener("click", function () {
-            if (aberto) {
-                ocultar.classList.add("menu-ocultar");
-            } else {
-                ocultar.classList.remove("menu-ocultar");
-            }
-            aberto = !aberto;
-        });
+    <!--Começo do sobre mim-->
+    <section id="sb" class="sobre-mim">
+        <h1>SOBRE MIM</h1>
+        <div class="texto-perfil">
+            <div class="texto">
 
 
+                <p>Olá, sou <strong> Mateus Pereira</strong>, um estudante em técnico de Desenvolvimento de Sistemas, com 14 anos. Estou
+                    explorando o mundo do desenvolvimento, aprendendo diferentes linguagens e frameworks. <br>  Estou
+                    comprome tido em me tornar um desenvolvedor <strong>habilidoso e criativo.</strong> Dê uma olhada nos meus projetos e
+                    sinta-se à vontade para conectar-se se estiver interessado em <strong> colaborações ou oportunidades</strong> de
+                    aprendizado conjunto. </p>
+            </div>
 
-
-
-    </script>
-    <div class="imagem">
-        <div class="simagem">
-            <h1 id="top">Olá mundo!</h1>
+            <img src="imagens/minha foto.jpg" alt="Minha imagem">
 
         </div>
-    </div>
-    <div class="texto_corpo">
-        <h1 id="mei"></h1>
-        <br>
-        <br>
-        <h1>olá mundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim vero nihil culpa voluptas voluptatibus nobis
-            cupiditate deserunt quibusdam, pariatur tenetur praesentium quos iste laborum deleniti repellat cumque eos
-            at cum perspiciatis dolorum facere fuga iusto repellendus adipisci. Sapiente ipsum minima aspernatur quod
-            praesentium sequi totam. Doloremque voluptate amet ratione? Similique tenetur deleniti incidunt
-            reprehenderit eum quidem illo laborum officiis ab culpa. Est perspiciatis repellendus odit fugiat animi sunt
-            voluptatem neque nesciunt temporibus magni ipsum assumenda exercitationem adipisci, non omnis eaque dolor.
-            Minus molestias blanditiis nostrum optio nam illum perferendis quia, possimus fuga ratione voluptate! Rem
-            totam nisi aspernatur quidem corporis!</p>
+    </section>
+    <!--Fim do sobre mim-->
+    <!--Começo do Hard skills-->
+    <section class="skills">
+        <div class="hard-skills">
+            <h1 class="hard">Hard</h1>
+            <h1 class="skills-1">SKILLS</h1>
+        </div>
 
-        <h1 id="fim"></h1>
-        <br>
-        <br>
-        <h1>Olá mundo2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore ratione dignissimos inventore
-            soluta accusamus repellat officia error eaque, illo fugit, ut, non quas pariatur fuga dolorem voluptas
-            animi. Explicabo, voluptates sequi! Omnis provident voluptatum neque quia cum deserunt consectetur a
-            asperiores voluptatibus fugit quasi debitis veritatis, molestiae laboriosam illo repellendus qui assumenda
-            temporibus iusto dicta. Reprehenderit obcaecati sequi nam magni labore? Incidunt voluptate ipsum culpa
-            voluptatem, deleniti odit accusantium eius totam inventore voluptatum veniam consectetur numquam corporis.
-            Omnis molestias dolores exercitationem ipsa nemo non consequatur iusto impedit quos provident. Minus ad
-            blanditiis culpa vel sapiente accusamus aspernatur dolore hic.</p>
+        <div class="icons">
 
-
-        <div class="portifolios">
-            <div class="port1">
-                <img src="imagens/site geo.png" alt="">
-                <div class="port1_text">
-                    <h3>Geografia em Foco</h3>
-                    <p>Esse é um blog feito para apresentação
-                        de um trabalho escolar
-                    </p>
+            <div>
+                <div class="icon-1">
+                    <img src="imagens/figma.png" alt="Figma">
+                    <img src="imagens/html.png" alt="HTML">
+                    <img src="imagens/github.png" alt="Github">
+                </div>
+                <div class="icon-2">
+                    <img src="imagens/js.svg" alt="Javascript">
+                    <img src="imagens/css.png" alt="CSS">
                 </div>
             </div>
 
-            <div class="port1">
-                <img src="imagens/site geo.png" alt="">
-                <div class="port1_text">
-                    <h3>Geografia em Foco</h3>
-                    <p>Esse é um blog feito para apresentação
-                        de um trabalho escolar
-                    </p>
+        </div>
+    </section>
+    <!--Fim Do hard skills-->
+
+    <!--Começo do código referente a parte dos projetos-->
+    <section id="pj" class="projetos">
+        <div class="projetos-titulo">
+            <hr>
+            <h1>PROJETOS</h1>
+            <hr>
+        </div>
+
+        <nav class="project" id="carr">
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Projeto5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident?</p>
+            </div>
+
+            <div class="projeto">
+                <img src="imagens/Captura de tela 2023-09-28 193858.png" alt="">
+                <h1>Mais projetos</h1>
+            </div>
+
+
+        </nav>
+
+
+        <!--
+           
+-->
+        
+        <!--
+
+            <nav class="navegador">
+
+                <img src="imagens/arrow.png" id="mais" alt="Avançar">
+                <input type="radio" name="cordenada" id="">
+                <input type="radio" name="cordenada" id="">
+                <input type="radio" name="cordenada" id="">
+                <input type="radio" name="cordenada" id="">
+                <input type="radio" name="cordenada" id="">
+            
+
+                <img src="imagens/arrow.png" id="menos" alt="Retornar">
+
+            </nav>
+        <div class="mais-projetos">
+            <a href="">Mais Projetos</a>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>-->
+
+        <button onclick="rodar()">Rodar</button>
+
+    </section>
+    <!--Fim do código dos projetos-->
+
+    <!--Começo do código do contato-->
+    <section id="ct" class="contato-p">
+        <div>
+            <nav class="contato-redes">
+                <div class="contato">
+                    <h1>CONTATO</h1>
                 </div>
-            </div>
+                <nav class="redes">
+                    <ul>
+                        <li><a target="_blank" href="https://contate.me/mateuspereira"><img src="imagens/whatsaap.png"
+                                    alt="Whatsapp"></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/mateus_pereira_1837/"><img
+                                    src="imagens/instagram.png" alt="Instagram"></a></li>
+                        <li><a target="_blank"
+                                href="https://github.com/mateuscromado?tab=overview&from=2023-12-01&to=2023-12-08"><img
+                                    src="imagens/github.png" alt="Github"></a></li>
+                     <!--  <li><a href=""><img src="imagens/61109.png" alt="Linkedin"></a></li>--> 
 
-            <div class="port1">
-                <img src="imagens/site geo.png" alt="">
-                <div class="port1_text">
-                    <h3>Geografia em Foco</h3>
-                    <p>Esse é um blog feito para apresentação
-                        de um trabalho escolar
-                    </p>
+                    </ul>
+                </nav>
+            </nav>
+
+            <nav class="dados">
+
+                <div class="input">
+                    <input type="text" placeholder="Nome" name="" id="aa">
+                    <br>
+                    <input type="email" placeholder="Email" name="" id="aa">
+                    <br>
+                    <textarea class="textarea" name="" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
+
+
+                    <input type="button" value="ENVIAR">
                 </div>
-            </div>
+            </nav>
         </div>
+    </section>
+    <!--Fim do código do cantato-->
 
 
 
 
 
-
-        <div class="quest">
-
-
-            <div class="formulario">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" />
-                <br>
-                <label for="pass">Password </label>
-                <input type="password" id="pass" name="password" minlength="8" required />
-                <br>
-                <input class="botao" type="submit" value="Sign in" />
-                <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-
-            </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
 
-        </div>
-
-
-
-    </div>
-
-
-    <footer>
-        <div class="footer">
-            <h1>olá meu rodapé </h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic fuga animi inventore enim provident
-                soluta assumenda nobis incidunt unde?</h3>
-        </div>
-    </footer>
 </body>
 
 </html>
