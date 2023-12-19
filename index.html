@@ -176,8 +176,9 @@
         <br>
         <br>
         <br>-->
+        <button onclick="voltar()">voltar</button>
 
-        <button onclick="rodar()">Rodar</button>
+        <button onclick="rodar()">Adinantar</button>
 
     </section>
     <!--Fim do código dos projetos-->
@@ -204,19 +205,20 @@
                 </nav>
             </nav>
 
-            <nav class="dados">
+            <form class="dados" method="post"   action="https://formspree.io/f/mbjnryza"
+            >
 
                 <div class="input">
-                    <input type="text" placeholder="Nome" name="" id="aa">
+                    <input type="text" placeholder="Nome" name="nome" id="aa">
                     <br>
-                    <input type="email" placeholder="Email" name="" id="aa">
+                    <input type="email" placeholder="Email" name="email" id="aa">
                     <br>
-                    <textarea class="textarea" name="" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
+                    <textarea class="textarea" name="mensagem" placeholder="Descrição" id="" cols="30" rows="10"></textarea>
 
 
-                    <input type="button" value="ENVIAR">
+                    <input type="submit" value="ENVIAR">
                 </div>
-            </nav>
+            </form>
         </div>
     </section>
     <!--Fim do código do cantato-->
