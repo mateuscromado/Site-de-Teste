@@ -20,6 +20,9 @@ function rodar(){
     if(largura <= 1024){
         contador = 2
     }
+    if(largura <= 900){
+        contador = 5
+    }
     if(largura <= 768){
         contador = 5
     }
@@ -35,10 +38,10 @@ function rodar(){
 
 
     if(i>contador){
-        carrossel.style.left = "0px"
+        carrossel.style.marginLeft = "0px"
         i = 0
     }else{
-        carrossel.style.left = `-${movimento}px`
+        carrossel.style.marginLeft = `-${movimento}px`
     }
 
     console.log(largura )
@@ -51,9 +54,9 @@ function voltar(){
     var largura1 = document.querySelector("body").offsetWidth;
 
 
-    carrossel.style.left = `${largura1}px`
+    carrossel.style.marginLeft = `${largura1}px`
     if(o > medi ){
-        carrossel.style.left = 0
+        carrossel.style.marginLeft = 0
     }
 
 }

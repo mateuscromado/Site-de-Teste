@@ -13,8 +13,8 @@
     }
 
     body {
-        overflow-x: hidden;
         font-family: 'Roboto', sans-serif;
+
     }
 
     .header {
@@ -219,6 +219,8 @@ height: 2px;
         background-color: #141414;
         color: #F9F9F9;
 
+        overflow: hidden;
+
     }
 
     .projetos-titulo {
@@ -251,7 +253,6 @@ height: 2px;
 
     .project {
         display: flex;
-        position: relative;
         background-color: #141414;
 
         transition: 1s;
@@ -283,71 +284,8 @@ height: 2px;
     }
 
 
-    .navegador {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
 
-    }
-
-    .navegador img {
-        width: 50px;
-        filter: invert(10);
-        transition: 0.3s;
-        cursor: pointer;
-        margin: 20px;
-
-
-    }
-
-    .navegador img:hover {
-        scale: 1.2;
-
-    }
-
-    .navegador img[id="mais"] {
-        transform: rotate(180deg);
-    }
-
-    .navegador input {
-        margin: 5px;
-    }
-
-    .mais-projetos {
-        width: 100%;
-        background-color: #000000;
-
-    }
-
-    .mais-projetos a {
-        text-decoration: none;
-        color: #565454;
-        font-size: 2em;
-        text-align: right;
-        float: right;
-        transition: 1s;
-        margin: 0 40px;
-        padding: 10px;
-        border-radius: 15px;
-
-
-    }
-
-    .mais-projetos a:hover {
-        background-color: #A7A5A5;
-        color: #141414;
-    }
-
-    .rodador {
-        margin-left: 9000px !important;
-    }
-
-    @media (max-width:850px) {
-        .navegador img {
-            width: 120px;
-        }
-
-    }
+    
 
     /*Fim dos projetos*/
 
@@ -438,6 +376,16 @@ height: 2px;
 
     }
 
+
+    @media (min-width:1025px) {
+        .projeto , .projeto img{
+            min-width: 26vw;
+        }
+
+        .project div:nth-of-type(3){
+            margin-right: 50px !important;
+        }
+    }
     @media
     /* (min-width:850px) and */
     (max-width:1024px) {
@@ -516,8 +464,15 @@ height: 2px;
     @media (max-width:900px) {
 
         .projeto, .projeto img{
-            min-width: 85vw !important;
+            min-width: 80vw !important;
         }
+
+        .projeto{
+            margin: 0;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+
         
     }
 
