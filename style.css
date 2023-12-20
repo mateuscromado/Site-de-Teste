@@ -13,8 +13,8 @@
     }
 
     body {
+        overflow-x: hidden;
         font-family: 'Roboto', sans-serif;
-
     }
 
     .header {
@@ -49,22 +49,23 @@
 
     }
 
-    .links a :hover{
+    .links a :hover {
         border-width: 100%;
     }
 
-    .linha-link{
+    .linha-link {
         width: 0%;
         height: 2px;
         background-color: #fff;
-margin: 0 auto;
+        margin: 0 auto;
         transition: 0.3s;
     }
-.links li:hover .linha-link{
-background-color: #fff; 
-width: 100%;
-height: 2px;
-}
+
+    .links li:hover .linha-link {
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+    }
 
 
     .links hr {
@@ -83,8 +84,7 @@ height: 2px;
     .banner {
         max-width: 100%;
         height: 80vh;
-        /*background-image: url(https://media.istockphoto.com/id/1282125191/pt/foto/planet-earth-from-the-space-at-night.jpg?s=612x612&w=0&k=20&c=k7-MULGUcFYZ9C9npY3P9nWFGYUsOf3ESGB6sn-NgxQ=);*/
-        background-color: gray;
+        background-image: url(imagens/baner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -97,7 +97,7 @@ height: 2px;
 
     .sobre-mim>h1 {
         text-align: center;
-        font-size: 8em ;
+        font-size: 8em;
         color: #3F3C3C;
         margin-bottom: 40px;
         font-weight: 700;
@@ -219,8 +219,6 @@ height: 2px;
         background-color: #141414;
         color: #F9F9F9;
 
-        overflow: hidden;
-
     }
 
     .projetos-titulo {
@@ -253,6 +251,7 @@ height: 2px;
 
     .project {
         display: flex;
+        position: relative;
         background-color: #141414;
 
         transition: 1s;
@@ -284,8 +283,88 @@ height: 2px;
     }
 
 
+    .navegador {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
 
-    
+    }
+
+    .navegador img {
+        width: 50px;
+        filter: invert(10);
+        transition: 0.3s;
+        cursor: pointer;
+        margin: 20px;
+
+
+    }
+
+    .navegador img:hover {
+        scale: 1.2;
+
+    }
+
+    .navegador img[id="mais"] {
+        transform: rotate(180deg);
+    }
+
+    .navegador input {
+        margin: 5px;
+    }
+
+    .mais-projetos {
+        width: 100%;
+        background-color: #000000;
+
+    }
+
+    .mais-projetos a {
+        text-decoration: none;
+        color: #565454;
+        font-size: 2em;
+        text-align: right;
+        float: right;
+        transition: 1s;
+        margin: 0 40px;
+        padding: 10px;
+        border-radius: 15px;
+
+
+    }
+
+    .mais-projetos a:hover {
+        background-color: #A7A5A5;
+        color: #141414;
+    }
+
+    .rodador {
+        margin-left: 9000px !important;
+    }
+
+    @media (max-width:850px) {
+        .navegador img {
+            width: 120px;
+        }
+
+    }
+
+    .projetos button {
+        background-color: rgba(255, 0, 0, 0);
+        border: none;
+        width: 100px;
+        cursor: pointer;
+        transition: 0.3s;
+
+    }
+
+    .projetos button:hover {
+        scale: 0.9;
+    }
+
+    .projetos button:first-of-type {
+        transform: rotate(180deg);
+    }
 
     /*Fim dos projetos*/
 
@@ -376,16 +455,6 @@ height: 2px;
 
     }
 
-
-    @media (min-width:1025px) {
-        .projeto , .projeto img{
-            min-width: 26vw;
-        }
-
-        .project div:nth-of-type(3){
-            margin-right: 50px !important;
-        }
-    }
     @media
     /* (min-width:850px) and */
     (max-width:1024px) {
@@ -418,7 +487,8 @@ height: 2px;
             width: 100px;
         }
 
-        .projeto, .projeto img {
+        .projeto,
+        .projeto img {
             min-width: 400px;
         }
 
@@ -461,20 +531,7 @@ height: 2px;
 
     }
 
-    @media (max-width:900px) and (min-width:794px) {
 
-        .projeto, .projeto img{
-          width: 70vw !important;
-        }
-
-        .projeto{
-            margin: 0;
-            margin-left: 15vw;
-            margin-right: 15vw;
-        }
-
-        
-    }
 
 
 
@@ -495,7 +552,19 @@ height: 2px;
 
         .textarea,
         input[id="aa"] {
-            width: 330px !important;
+            width: 100% !important;
+        }
+
+        .projeto,
+        .projeto img {
+            width: 80vw !important;
+
+
+        }
+
+        .projeto {
+            margin-left: 10vw;
+            margin-right: 10vw;
         }
     }
 
@@ -512,31 +581,14 @@ height: 2px;
             display: block;
         }
 
-        .redes ul {
-            float: none;
-        }
-
-        .redes ul li img {
-            filter: invert(100);
-
-            margin: 50px auto;
-        }
-
-        .redes {
-            width: 300px;
-
-        }
-
-
-        .contato {
-            width: 300px;
-        }
+       
 
         .contato h1 {
             color: #fff;
             -webkit-text-stroke-width: 0;
             font-size: 4rem;
             margin-right: 40px;
+            text-align: center;
         }
 
         .links li a {
@@ -544,26 +596,22 @@ height: 2px;
         }
     }
 
-   
+    @media (max-width: 768px) and (min-width:381px) {
+
+        .projeto,
+        .projeto img {
+            min-width: 80vw !important;
+        }
+
+        .projeto {
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+    }
+
     @media (max-width:380px) {
 
-        .textarea,
-        input[id="aa"] {
-            width: 250px !important;
 
-        }
-
-        .redes ul li img {
-            width: 30px;
-        }
-
-        .contato h1 {
-            font-size: 3rem;
-        }
-
-        .contato-redes {
-            margin-left: -40px;
-        }
 
         /*Cabeçalho*/
 
@@ -583,84 +631,103 @@ height: 2px;
 
         .links {
             gap: 15px;
-        } 
+        }
+
         .sobre-mim {
-        width: 100vw;
-        padding: 10px;
-    }
+            width: 100vw;
+            padding: 10px;
+        }
 
-    .sobre-mim h1 {
-        font-size: 4rem;
+        .sobre-mim h1 {
+            font-size: 4rem;
 
-    }
+        }
 
-    .texto {
-        margin: 20px 20px;
+        .texto {
+            margin: 20px 20px;
+
+        }
+
+        .texto p {
+            font-size: 1rem;
+
+        }
+
+        .texto-perfil {
+            justify-content: center;
+            margin-left: 0px !important;
+            width: 90vw;
+            padding: 0 auto !important;
+        }
+
+        .texto-perfil img {
+
+            width: 60vw;
+            height: 60vw;
+            margin-left: 15vw !important;
+        }
+
+
+
+
+        .hard-skills>h1 {
+            font-size: 5.5rem !important;
+            margin: 0;
+        }
+
+        .icons img {
+            width: 20vw;
+        }
+
+        .projetos-titulo {
+            font-size: 2rem;
+            width: 80vw;
+
+        }
+
+        .projetos-titulo hr {
+            width: 30vw;
+            height: 5vw;
+
+        }
+
+        .projeto,
+        .projeto img {
+            min-width: 80vw !important;
+        }
+
+        .projeto {
+            margin-left: 10vw;
+            margin-right: 10vw;
+            height: 500px;
+
+            font-size: 20px !important;
+
+        }
+
+        .projeto h1,
+        .projeto p {
+            font-size: 25px;
+        }
+
+
+        /*Começo da responsividade do formulário*/
+        .redes ul {
+         width: 100%;
+        }
+
+
+        .input{
+            width: 100%;
+        }
+
         
-    }
-
-    .texto p{
-        font-size: 1rem;
-        
-    }
-.texto-perfil{
-    justify-content: center;
-    margin-left: 0px !important;
-    width: 90vw;
-    padding: 0 auto !important;
-}
-    .texto-perfil img{
-       
-        width: 60vw;
-        height: 60vw;
-        margin-left: 15vw !important;
-    }
 
 
+        /*Fim da responsividade o cabeçalho*/
 
 
-.hard-skills > h1{
-    font-size: 5.5rem !important;
-margin: 0;    
-    }
-    .icons img{
-        width: 20vw;
-    }
-
-    .projetos-titulo {
-font-size: 2rem; 
-width: 80vw;      
-        
-    }
-
-  
-   .project{
-    padding: 0;
-    margin:0;
-    gap: 20px;
-
-
-   }
-
-    .projeto{
-               
-                height: 500px;
-
-                font-size: 20px !important;
 
     }
 
-    .projeto, .projeto img{
-        width: 1000px !important;
-    }
-
-    .projeto h1, .projeto p {
-        font-size: 25px;
-    }
-   
-
-
-    }
-    
     /*Sobre mim*/
-   
