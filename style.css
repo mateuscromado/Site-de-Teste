@@ -451,7 +451,7 @@
 
     .contato-p>div {
         display: flex;
-        align-items: center;
+        align-items: center;  
 
     }
 
@@ -716,13 +716,30 @@
          width: 100%;
         }
 
-
-        .input{
-            width: 100%;
+        .redes a img{
+            width: 20vw !important;
         }
 
+
+        .input{
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        .contato h1 {
+            font-size: 15vw;
+            text-align: center;
+        }
+
+        .dados{
+            width: 80px;
+        }
         
 
+        .contato-p > div{
+            width: 80vw;
+            margin: 0;
+        }
 
         /*Fim da responsividade o cabeçalho*/
 
