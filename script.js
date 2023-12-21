@@ -60,7 +60,7 @@ function voltar(){
 
 }
 
-//setInterval(rodar,5000)
+setInterval(rodar,5000)
 
 
 

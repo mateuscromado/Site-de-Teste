@@ -374,7 +374,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 200px;
+      
 
         gap: 200px;
     }
@@ -574,7 +574,7 @@
             display: flex;
             justify-content: center;
             padding-top: 0;
-            width: 100vw;
+            width: 100%;
         }
 
         .contato-p>div {
@@ -609,7 +609,7 @@
         }
     }
 
-    @media (max-width:380px) {
+    @media (max-width:500px) {
 
 
 
@@ -718,6 +718,7 @@
 
         .redes a img{
             width: 20vw !important;
+            filter: invert(10);
         }
 
 
@@ -727,7 +728,7 @@
         }
 
         .contato h1 {
-            font-size: 15vw;
+            font-size: 18vw;
             text-align: center;
         }
 
@@ -742,7 +743,9 @@
         }
 
         /*Fim da responsividade o cabeçalho*/
-
+        .redes ul {
+            gap: 10vw;
+        }
 
 
     }
