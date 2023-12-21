@@ -1,5 +1,0 @@
-Descrição narrativa
-
-se o botão for clicado e já houver a classe ocultar no elemento
-
-então retire a classe do elemento
