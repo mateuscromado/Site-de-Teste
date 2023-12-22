@@ -264,7 +264,9 @@
         text-align: center;
         border-radius: 10px 10px 10px 10px;
         margin-left: 80px;
+       
         padding-bottom: 50px;
+
 
     }
 
@@ -274,6 +276,8 @@
         border-radius: 10px 10px 0px 0px;
     }
 
+
+    
     .projeto h1 {
         font-size: 3rem;
     }
@@ -763,7 +767,76 @@ outline: none;
             gap: 10vw;
         }
 
+        .projeto,
+.projeto img {
+    width: 100%;
+    max-width: 80vw;
+}
+
+.projetos-titulo {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 4rem;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.projetos-titulo hr {
+    width: 100%;
+    height: 2px;
+    background-color: #4A7D9E;
+    border: none;
+    border-radius: 10px;
+}
+
+.projeto p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+
+/* ... (seu CSS atual) ... */
+
+/* Alterações para melhorar a responsividade */
+.projeto,
+.projeto img {
+    width: 100%;
+    max-width: 80vw;
+}
+
+.projetos-titulo {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 4rem;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.projetos-titulo hr {
+    width: 100%;
+    height: 2px;
+    background-color: #4A7D9E;
+    border: none;
+    border-radius: 10px;
+}
+
+.projeto p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* ... (seu CSS atual) ... */
 
     }
+
+
+    /* ... (seu CSS atual) ... */
+
+/* Alterações para melhorar a responsividade */
+
+
+/* ... (seu CSS atual) ... */
 
     /*Sobre mim*/
